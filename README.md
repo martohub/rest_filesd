@@ -10,7 +10,7 @@ python3 -m venv rest_filesd
 
 source rest_filesd/bin/activate
 
-pip install -r requirements.txt   # and ignore all errors
+pip install -r requirements.txt    # and ignore all errors
 
 export FLASK_APP=manage.py
 
