@@ -3,11 +3,17 @@
 #installation (python 3.8.2)
 
 git clone https://github.com/thecloudroot/rest_filesd
+
 cd rest_filesd
+
 python3 -m venv rest_filesd
+
 source rest_filesd/bin/activate
+
 pip install -r requirements.txt
+
 export FLASK_APP=manage.py
+
 flask run --host=0.0.0.0
 
 #flask run --host=127.0.0.1
