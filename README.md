@@ -1,4 +1,4 @@
-# rest_filesd -> REST API which stores targets and labels in sqlite3 database and converts them to YAML files, so they can be scraped by Prometheus 
+# REST API which stores targets and labels in sqlite3 database and converts them to YAML files, so they can be scraped by Prometheus 
 
 #installation (python 3.8.2)
 
