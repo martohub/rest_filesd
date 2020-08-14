@@ -1,0 +1,170 @@
+2020-08-14 14:17:54,232 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 14:17:54,241 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 14:18:00,637 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:18:00,643 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:19:56,160 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:19:56,161 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 14:19:56,183 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 14:19:56,184 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 14:19:59,784 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:19:59,790 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:22:40,982 - rest_filesd - INFO - DELETE: path=/api/v1/targets/1/, client=127.0.0.1, ID=1
+2020-08-14 14:22:41,003 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 14:22:41,003 - rest_filesd - INFO - Target ID 1 deleted.
+2020-08-14 14:22:48,228 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:22:48,231 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:26:37,167 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:26:37,174 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:28:22,925 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:28:22,926 - rest_filesd - DEBUG - POST: document=None
+2020-08-14 14:28:22,926 - rest_filesd - DEBUG - Received document was invalid.
+2020-08-14 14:35:48,997 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 14:35:49,007 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 14:36:58,261 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:36:58,262 - rest_filesd - DEBUG - POST: document={'host': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 14:36:58,262 - rest_filesd - DEBUG - Request is missing a target field.
+2020-08-14 14:37:09,986 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:37:09,986 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 14:37:10,020 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 14:37:10,020 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 14:37:22,668 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:37:22,674 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:37:44,804 - rest_filesd - INFO - DELETE: path=/api/v1/targets/2/, client=127.0.0.1, ID=2
+2020-08-14 14:37:44,822 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 14:37:44,822 - rest_filesd - INFO - Target ID 2 deleted.
+2020-08-14 14:37:48,803 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:37:48,808 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:38:01,116 - rest_filesd - INFO - DELETE: path=/api/v1/targets/1/, client=127.0.0.1, ID=1
+2020-08-14 14:38:01,127 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 14:38:01,128 - rest_filesd - INFO - Target ID 1 deleted.
+2020-08-14 14:38:10,344 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:38:10,344 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 14:38:10,346 - rest_filesd - DEBUG - Target cola.example.com exists.
+2020-08-14 14:38:16,523 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:38:16,526 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:38:19,500 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:38:19,502 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:38:19,873 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:38:19,875 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 14:39:02,032 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:39:02,033 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'mail', 'severity': 'critical'}}
+2020-08-14 14:39:02,036 - rest_filesd - DEBUG - Target cola.example.com exists.
+2020-08-14 14:40:01,606 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:40:01,606 - rest_filesd - DEBUG - POST: document={'labels': {'env': 'prod', 'emai_to': 'mail', 'severity': 'critical'}, 'target': 'cola.example.com', 'job': 'blackbox'}
+2020-08-14 14:40:01,609 - rest_filesd - DEBUG - Target cola.example.com exists.
+2020-08-14 14:41:08,963 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:41:08,963 - rest_filesd - DEBUG - POST: document={'labels': {'env': 'prod', 'emai_to': 'mail', 'severity': 'critical'}, 'target': 'cola.example.com', 'job': 'blackbox'}
+2020-08-14 14:41:08,965 - rest_filesd - DEBUG - Target cola.example.com exists.
+2020-08-14 14:42:30,864 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:42:30,864 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o1', 'severity': 'critical'}}
+2020-08-14 14:42:30,867 - rest_filesd - DEBUG - Target cola.example.com exists.
+2020-08-14 14:43:23,181 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 14:43:23,182 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o1', 'severity': 'critical'}}
+2020-08-14 14:43:23,184 - rest_filesd - DEBUG - Target cola.example.com exists.
+2020-08-14 14:43:57,545 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 14:43:57,549 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 16:12:05,937 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 16:12:05,948 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 16:13:13,609 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 16:13:13,609 - rest_filesd - DEBUG - POST: document={'target': 'cola1.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 16:13:13,633 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:13:13,633 - rest_filesd - INFO - Target 'cola1.example.com' added.
+2020-08-14 16:24:23,344 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 16:24:23,344 - rest_filesd - DEBUG - POST: document={'target': 'cola1.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 16:24:23,348 - rest_filesd - DEBUG - Target cola1.example.com exists.
+2020-08-14 16:24:26,617 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 16:24:26,618 - rest_filesd - DEBUG - POST: document={'target': 'cola1.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 16:24:26,619 - rest_filesd - DEBUG - Target cola1.example.com exists.
+2020-08-14 16:25:19,494 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 16:25:19,500 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:25:30,055 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 16:25:30,056 - rest_filesd - DEBUG - POST: document={'target': 'cola1.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 16:25:30,079 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:25:30,079 - rest_filesd - INFO - Target 'cola1.example.com' added.
+2020-08-14 16:25:31,597 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 16:25:31,597 - rest_filesd - DEBUG - POST: document={'target': 'cola1.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 16:25:31,599 - rest_filesd - DEBUG - Target cola1.example.com exists.
+2020-08-14 16:25:41,970 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 16:25:41,970 - rest_filesd - DEBUG - POST: document={'target': 'cola1.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o1', 'severity': 'critical'}}
+2020-08-14 16:25:41,973 - rest_filesd - DEBUG - Target cola1.example.com exists.
+2020-08-14 16:28:10,255 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 16:28:10,260 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:50:32,248 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 16:50:32,257 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:50:39,903 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 16:50:39,908 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 16:50:42,603 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 16:50:42,607 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 16:50:43,437 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 16:50:43,440 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 16:50:43,609 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 16:50:43,612 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 16:50:43,789 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 16:50:43,793 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 16:55:46,807 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 16:55:46,811 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:56:06,869 - rest_filesd - INFO - PUT: path=/api/v1/targets/3/, client=127.0.0.1, ID=3
+2020-08-14 16:56:06,869 - rest_filesd - DEBUG - PUT: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o1', 'severity': 'critical'}}
+2020-08-14 16:56:06,872 - rest_filesd - DEBUG - Creating record with ID 3
+2020-08-14 16:56:44,599 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 16:56:44,606 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:56:49,331 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 16:56:49,336 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 16:59:43,197 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 16:59:43,203 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:59:46,854 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 16:59:46,855 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'node', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 16:59:46,874 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 16:59:46,875 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 17:02:16,430 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 17:02:16,438 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 17:02:17,720 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 17:02:17,725 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 17:04:31,021 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:04:31,022 - rest_filesd - DEBUG - POST: document={'target': 'cola3.example.com', 'job': 'node', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 17:04:31,055 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:04:31,056 - rest_filesd - INFO - Target 'cola3.example.com' added.
+2020-08-14 17:04:48,824 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:04:48,824 - rest_filesd - DEBUG - POST: document={'target': 'cola4.example.com', 'job': 'node', 'labels': {'env': 'prod', 'emai_to': 'critical'}}
+2020-08-14 17:04:48,846 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:04:48,846 - rest_filesd - INFO - Target 'cola4.example.com' added.
+2020-08-14 17:05:13,345 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 17:05:13,353 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 17:10:56,589 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 17:10:56,594 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:11:29,046 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:11:29,046 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'node', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 17:11:29,072 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:11:29,073 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 17:11:41,783 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:11:41,783 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'node', 'labels': {'env': 'prod', 'emai_to': 'bot4o1', 'severity': 'critical'}}
+2020-08-14 17:11:41,802 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:11:41,803 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 17:11:44,805 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-08-14 17:11:44,810 - rest_filesd - DEBUG - Showing all targets.
+2020-08-14 17:13:13,321 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:13:13,322 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 17:13:13,354 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:13:13,354 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 17:13:17,182 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:13:17,182 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o1', 'severity': 'critical'}}
+2020-08-14 17:13:17,214 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:13:17,215 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 17:23:04,513 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 17:23:04,518 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:24:24,156 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:24:24,156 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o', 'severity': 'critical'}}
+2020-08-14 17:24:24,173 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:24:24,173 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 17:24:29,123 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:24:29,123 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o1', 'severity': 'critical'}}
+2020-08-14 17:24:29,143 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:24:29,144 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 17:30:06,686 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 17:30:06,692 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:32:24,872 - rest_filesd - INFO - POST: path=/api/v1/targets/, client=127.0.0.1
+2020-08-14 17:32:24,872 - rest_filesd - DEBUG - POST: document={'target': 'cola.example.com', 'job': 'blackbox', 'labels': {'env': 'prod', 'emai_to': 'bot4o1', 'severity': 'critical'}}
+2020-08-14 17:32:24,894 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-08-14 17:32:24,895 - rest_filesd - INFO - Target 'cola.example.com' added.
+2020-08-14 17:33:49,001 - rest_filesd - DEBUG - Created sample data.
+2020-08-14 17:33:49,007 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
