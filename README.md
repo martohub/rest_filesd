@@ -1,4 +1,4 @@
-# rest_filesd
+# Prometheus rest_filesd -> REST API which converts prometheus targets to YAML
 
 #installation (python 3.8.2)
 
