@@ -140,8 +140,6 @@ def sample_data(db):
     # Create sample jobs, targets and labels
     sample_jobs = [{"name": "node", "port": "9110"},
                    {"name": "blackbox", "port": ""},
-                   {"name": "mysql", "port": "9113"},
-                   {"name": "node2", "port": "9114"},
                    {"name": "slurm", "port": "9115"}]
     for sample in sample_jobs:
         Job.create(name=sample['name'], port=sample['port'])
