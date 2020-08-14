@@ -39,8 +39,10 @@ curl -i -L -H "Content-Type: application/json" -X POST http://localhost:5000/api
 ############
 DELETING:
 ############
+
 curl -L -i -H "Content-Type: application/json" -X DELETE http://localhost:5000/api/v1/targets/{database_uid}
 
 example:
+#
 curl -L -i -H "Content-Type: application/json" -X DELETE http://localhost:5000/api/v1/targets/1
 
