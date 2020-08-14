@@ -18,6 +18,8 @@ flask run --host=0.0.0.0
 
 #flask run --host=127.0.0.1
 
+deactivate #to exit virtual environment
+
 ############
 USAGE:
 ############
