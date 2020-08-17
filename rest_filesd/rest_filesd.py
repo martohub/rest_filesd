@@ -1,6 +1,3 @@
-"""This is a simple Prometheus service discovery daemon, where services can register themselfs to Prometheus
-for monitoring. """
-
 from flask import Flask, jsonify, make_response
 from flask_swagger import swagger
 from flask_swagger_ui import get_swaggerui_blueprint
@@ -13,14 +10,14 @@ from .utils import generate_targets_yaml
 # from rest_filesd.log import logger
 
 SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')
-API_URL = '/spec'  # Our API url (can of course be a local resource)
+API_URL = '/spec'  # API url
 
 # Call factory function to create our blueprint
 swaggerui_blueprint = get_swaggerui_blueprint(
     SWAGGER_URL,  # Swagger UI static files will be mapped to '{SWAGGER_URL}/dist/'
     API_URL,
     config={  # Swagger UI config overrides
-        'app_name': "Test application"
+        'app_name': "prometheus rest_filesd application"
     },
     oauth_config={  # OAuth config. See https://github.com/swagger-api/swagger-ui#oauth2-configuration .
        'clientId': "your-client-id",
@@ -31,12 +28,11 @@ swaggerui_blueprint = get_swaggerui_blueprint(
        'additionalQueryStringParams': {'test': "hello"}
     }
 )
-# TODO: Add logging for error (in case of exceptions & stuff) and request (when debuging, content of request, url, function,...)
 
 
 # @app.route('/')
 # def index():
-#     return "Prometheus service discovery daemon in the making"
+#     return "Prometheus service discovery"
 #
 #
 # @app.route("/spec")

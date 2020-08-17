@@ -4,7 +4,6 @@ import config as config
 # Logging
 # Setup logging
 logger = logging.getLogger("rest_filesd")
-# TODO: Get loglevel from config
 logger.setLevel(logging.DEBUG)
 
 # create a file handler

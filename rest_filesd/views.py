@@ -10,7 +10,15 @@ target_blueprint = Blueprint('target', __name__)
 
 @target_blueprint.route('/api/v1/targets/', methods=['GET'])
 def get_targets():
-    """Returns all targets."""
+    """
+    Returns all targets.
+    ---
+    tags:
+      - targets
+    responses:
+      200:
+        description: Listing targets
+    """
 
     logger.info("GET: path={}, client={}".format(request.path, request.remote_addr))
 
@@ -78,27 +86,27 @@ def create_target():
             value:
               type: string
 
-    # parameters:
-    #   - in: body
-    #     name: body
-    #     schema:
-    #       id: Target
-    #       required:
-    #         - target
-    #         - job
-    #       properties:
-    #         target:
-    #           type: string
-    #           description: target's fqdn
-    #         job:
-    #           type: string
-    #           description: exporter's name
-    #         labels:
-    #           type: object
-    #           properties:
-    #             label_name:
-    #               type: string
-    #           description: list of labels
+    parameters:
+      - in: body
+        name: body
+        schema:
+          id: Target
+          required:
+            - target
+            - job
+          properties:
+            target:
+              type: string
+              description: target's fqdn
+            job:
+              type: string
+              description: exporter's name
+            labels:
+              type: object
+              properties:
+                label_name:
+                  type: string
+              description: list of labels
     responses:
       201:
         description: Target created
@@ -114,14 +122,6 @@ def create_target():
     # Check if we received a valid document and fail with error message.
     validate_document(document)
 
-    # Check if this target/job pair already exists
-    #target_exists = Target.select().where(
-    #    Target.host == document['target'],
-    #    Target.job == Job.select().where(Job.name == document['job'])
-    #).exists()
-    #if target_exists:
-    #    logger.debug("Target {} exists.".format(document['target']))
-    #    abort(409, 'This target already exists. If you want to modify it, use PUT request.')
 
     # Get job object
     job = Job.get(Job.name == document['job'])
