@@ -8,6 +8,6 @@ if __name__ == '__main__':
     # create_app(os.getenv('FLASK_CONFIG') or 'default')
     # CONFIG = os.getenv('FLASK_CONFIG') or DevConfig
     app = create_app()
-    app.run(debug=True, port=4999)
+    app.run(debug=True, host='0.0.0.0', port=4999)
 
 
