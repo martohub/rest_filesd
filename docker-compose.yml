@@ -3,7 +3,7 @@ services:
   web: 
     build: . 
     ports: 
-      - '4000:4999'
+      - '4999:4999'
     environment: 
       - 'FLASK_APP=manage.py'
       - 'FLASK_ENV=production'
