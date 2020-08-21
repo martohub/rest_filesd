@@ -1,6 +1,12 @@
+"""
+    PROMETHEUS REST SD
+"""
+
 from flask import Flask, jsonify, make_response
 from flask_swagger import swagger
 from flask_swagger_ui import get_swaggerui_blueprint
+from yaml import Loader, load
+#from settings import SWAGGER_URL, swagger_path
 from .models import db
 from .models import Job, Target, Label
 from .log import logger
@@ -9,35 +15,33 @@ from .utils import generate_targets_yaml
 
 # from rest_filesd.log import logger
 
-SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')
+SWAGGER_URL = '/api'  # URL for exposing Swagger UI (without trailing '/')
 API_URL = '/spec'  # API url
+#swagger_path=?
+#swagger_yml = load(open(swagger_path, 'r'), Loader=Loader)
+
 
 # Call factory function to create our blueprint
 swaggerui_blueprint = get_swaggerui_blueprint(
-    SWAGGER_URL,  # Swagger UI static files will be mapped to '{SWAGGER_URL}/dist/'
+    SWAGGER_URL,
+#    '/api/swagger.json',
+      # Swagger UI static files will be mapped to '{SWAGGER_URL}/dist/'
     API_URL,
     config={  # Swagger UI config overrides
-        'app_name': "prometheus rest_filesd application"
-    },
-    oauth_config={  # OAuth config. See https://github.com/swagger-api/swagger-ui#oauth2-configuration .
-       'clientId': "your-client-id",
-       'clientSecret': "your-client-secret-if-required",
-       'realm': "your-realms",
-       'appName': "your-app-name",
-       'scopeSeparator': " ",
-       'additionalQueryStringParams': {'test': "hello"}
+        'app_name':"REST file service discovery",
+        'info':{"title":"REST API"},
+        'title':"REST API"
     }
+    #oauth_config={  # OAuth config. See https://github.com/swagger-api/swagger-ui#oauth2-configuration .
+    #   'clientId': "your-client-id",
+    #   'clientSecret': "your-client-secret-if-required",
+    #   'realm': "your-realms",
+    #   'appName': "your-app-name",
+    #   'scopeSeparator': " ",
+    #   'additionalQueryStringParams': {'test': "hello"}
+    #}
 )
 
-
-# @app.route('/')
-# def index():
-#     return "Prometheus service discovery"
-#
-#
-# @app.route("/spec")
-# def spec():
-#     return jsonify(swagger(app))
 
 
 def create_app():
@@ -77,14 +81,42 @@ def create_app():
     # Generate YAML files from latest data in DB
     generate_targets_yaml()
 
-    @app.route("/spec")
-    def spec():
-        return jsonify(swagger(app))
+    #@app.route("/spec")
+    #def spec():
+    #    return jsonify(swagger(app))
     # Start the app
     # app.run(debug=True, port=int(config.PORT))
     # app.run(debug=False, port=4999)
+    @app.route('/')
+    def index():
+        return "Prometheus service discovery"
+#    @app.route("/spec")
+#    def spec():
+#        return jsonify(swagger(app))
+
+    @app.route("/spec")
+    def spec():
+        swag = swagger(app)
+        swag['info']['version'] = "0.0.7"
+        swag['info']['title'] = "Prometheus REST API"
+        return jsonify(swag)
+
+    #
+    #
+    # @app.route("/spec")
+    # def spec():
+    #     return jsonify(swagger(app))
+
+
 
     return app
+
+#swaggerui_blueprint = get_swaggerui_blueprint(
+#    SWAGGER_URL,
+#    '/api/swagger.json',
+#)
+
+
 
 
 def register_blueprints(app):
