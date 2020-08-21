@@ -100,7 +100,15 @@ def create_app():
         """
         return render_template('home.html')
 
+    @app.route('/index')
+    def index():
+        """
+        This function just responds to the browser ULR
+        localhost:5000/
 
+        :return:        the rendered template 'home.html'
+        """
+        return render_template('index.html')
 
 
 
