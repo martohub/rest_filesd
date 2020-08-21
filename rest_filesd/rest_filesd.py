@@ -113,7 +113,6 @@ def create_app():
 
     return app
 
-
 def register_blueprints(app):
     """ Register all blueprint modules """
 
@@ -121,7 +120,6 @@ def register_blueprints(app):
     app.register_blueprint(target_blueprint)
 
     app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
-
 
 def register_error_pages(app):
     # Register global error handlers
@@ -131,11 +129,9 @@ def register_error_pages(app):
         response.status_code = 400
         return response
 
-
     @app.errorhandler(404)
     def not_found(error):
         return make_response(jsonify({'error': error.description}), 404)
-
 
     @app.errorhandler(409)
     def conflict(error):
@@ -143,17 +139,14 @@ def register_error_pages(app):
         response.status_code = 409
         return response
 
-
     @app.errorhandler(422)
     def conflict(error):
         response = jsonify({'message': error.description})
         response.status_code = 422
         return response
 
-
 def init_db(db):
     db.create_tables([Target, Job, Label])
-
 
 def sample_data(db):
     # Create tables
@@ -161,7 +154,7 @@ def sample_data(db):
     db.create_tables([Target, Job, Label])
 
     # Create sample jobs, targets and labels
-    sample_jobs = [{"name": "bug_me", "port": "9110"},
+    sample_jobs = [{"name": "bug_me_not", "port": "9110"},
                    {"name": "blackbox", "port": ""},
                    {"name": "blackbox1", "port": ""}]
     for sample in sample_jobs:

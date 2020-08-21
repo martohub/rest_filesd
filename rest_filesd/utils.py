@@ -30,12 +30,12 @@ def generate_targets_yaml():
 
         # Generate configuration for single target
         single_target = {
-            "targets": target.host,
+        #    "targets": target.host,
+            "targets": [ "[" +target.host + "]" ],
             "labels": labels}
 
         # Append target to job's array, so we can dump same jobs to same file: {"job": [target1, target2,...]...}
         targets.setdefault(target.job.name, []).append(single_target)
-
 
     # Get a list of all YAML files, so we can remove unchanged ones.
     f_to_delete = [f for f in os.listdir(yaml_dir) if os.path.isfile(os.path.join(yaml_dir, f))]
