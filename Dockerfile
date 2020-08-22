@@ -7,4 +7,4 @@ RUN export FLASK_APP=manage.py
 RUN export FLASK_ENV=production
 COPY . /rest_filesd 
 ENTRYPOINT ["python3"]
-CMD ["run.py"]
+CMD ["app.py"]
