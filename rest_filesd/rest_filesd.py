@@ -90,7 +90,7 @@ def create_app():
 #        return jsonify(swagger(app))
 
 # Create a URL route in our application for "/"
-    @app.route('/')
+    @app.route('/index2')
     def home():
         """
         This function just responds to the browser ULR
@@ -98,9 +98,9 @@ def create_app():
 
         :return:        the rendered template 'home.html'
         """
-        return render_template('home.html')
+        return render_template('index2.html')
 
-    @app.route('/index')
+    @app.route('/')
     def index():
         """
         This function just responds to the browser ULR
