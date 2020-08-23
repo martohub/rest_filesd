@@ -4,3 +4,4 @@ pyyaml
 click
 flask_swagger
 flask_swagger_ui
+flask_bootstrap

@@ -10,6 +10,7 @@ from .models import db
 from .models import Job, Target, Label
 from .log import logger
 from .utils import generate_targets_yaml
+from flask_bootstrap import Bootstrap
 
 ### Application logic
 SWAGGER_URL = '/api'  # URL for exposing Swagger UI (without trailing '/')
@@ -41,6 +42,7 @@ swaggerui_blueprint = get_swaggerui_blueprint(
 
 def create_app():
     app = Flask(__name__, template_folder="templates")
+    Bootstrap(app)
     app.config.update(dict(
         TESTING = True
     ))
@@ -110,7 +112,14 @@ def create_app():
         """
         return render_template('index.html')
 
-
+    @app.route('/base')
+    def base():
+        """
+        This function just responds to the browser ULR
+        localhost:5000/base
+        :return:        the rendered template 'base.html'
+        """
+        return render_template('base.html')
 
     @app.route("/spec")
     def spec():
