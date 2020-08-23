@@ -5,7 +5,6 @@ from flask import abort
 from yaml import dump
 import os
 
-
 def generate_targets_yaml():
     """ Generate and write YAML files for ingestion by Prometheus file SD. """
     targets = {}
@@ -30,8 +29,10 @@ def generate_targets_yaml():
 
         # Generate configuration for single target
         single_target = {
-        #    "targets": target.host,
-            "targets": [ "[" +target.host + "]" ],
+            "targets": [target.host],
+        #    "targets": [""+target.host+""],
+        #    "targets": [ "["+target.host+"]" ],
+        #    "targets": [ "[" + target.host + "]" ],
             "labels": labels}
 
         # Append target to job's array, so we can dump same jobs to same file: {"job": [target1, target2,...]...}
