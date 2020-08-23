@@ -2,4 +2,4 @@
     job: blackbox1
     severity: CRITICAL
   targets:
-  - '[cola2.example.com]'
+  - cola2.example.com

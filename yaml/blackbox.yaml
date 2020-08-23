@@ -2,4 +2,4 @@
     environment: enterprise
     job: blackbox
   targets:
-  - '[cola1.example.com]'
+  - cola1.example.com
