@@ -1,0 +1,132 @@
+openapi: 3.0.0
+info:
+  title: Prometheus REST API
+  version: 0.0.8-oas3
+paths:
+  /api/v1/targets/:
+    get:
+      description: ''
+      responses:
+        '200':
+          description: Listing targets
+      summary: Returns all targets.
+      tags:
+        - targets
+    post:
+      description: 'Creating a new target'
+      responses:
+        '201':
+          description: Target created
+        '400':
+          description: 'Mailformed JSON, labels not array or missing field.'
+      summary: Creates a new target.
+      tags:
+        - targets
+      requestBody:
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/Target'
+        required: true
+  '/api/v1/targets/{target_id}/':
+    get:
+      description: ''
+      parameters:
+        - description: DB key id
+          in: path
+          name: target_id
+          required: true
+          x-exportParamName: target_id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Listing single target.
+        '404':
+          description: Not Found.
+      summary: Returns single target.
+      tags:
+        - targets
+    put:
+      description: 'Updates a target'
+      parameters:
+        - description: DB key id
+          in: path
+          name: target_id
+          required: true
+          x-exportParamName: target_id
+          schema:
+            type: string
+      requestBody:
+        description: Updated user object
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/Target'
+        required: true
+      responses:
+        '200':
+          description: Updated target.
+        '201':
+          description: Created target.
+        '404':
+          description: Not Found.
+      summary: Updates single target.
+      tags:
+        - targets  
+    delete:
+      description: ''
+      parameters:
+        - description: DB key id
+          in: path
+          name: target_id
+          required: true
+          x-exportParamName: target_id
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Target deleted
+        '404':
+          description: Not Found.
+      summary: Deletes single target.
+      tags:
+        - targets  
+components:
+  schemas:
+    Label:
+      properties:
+        label:
+          type: string
+        target_id:
+          type: integer
+        value:
+          type: string
+    Target:
+      properties:
+        job:
+          description: blackbox job name
+          type: string
+        labels:
+          description: appended to Prometheus
+          properties:
+            environment:
+              type: string
+            emai_to:
+              type: string
+            severity:
+              type: string      
+          type: object
+          required: 
+            - environment
+            - emai_to            
+            - severity            
+        target:
+              description: target's URL
+              type: string
+      required:
+        - job
+        - environment
+        - emai_to
+        - severity
+        - target
