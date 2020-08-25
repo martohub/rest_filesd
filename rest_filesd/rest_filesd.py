@@ -14,7 +14,9 @@ from flask_bootstrap import Bootstrap
 
 ### Application logic
 SWAGGER_URL = '/api'  # URL for exposing Swagger UI (without trailing '/')
-API_URL = '/spec'  # API url
+API_URL = '/static/swagger.yaml'  # API url
+#API_URL = '/spec'  # API url
+
 #swagger_yml = load(open(swagger_path, 'r'), Loader=Loader)
 
 # Call factory function to create our blueprint

@@ -39,8 +39,31 @@ def get_targets():
 
 @target_blueprint.route('/api/v1/targets/<int:target_id>/', methods=['GET'])
 def get_single_targets(target_id):
-    """Returns a single target."""
 
+    """
+    Returns single target.
+    ---
+    tags:
+      - targets
+    summary: "Get a Key by id"
+    consumes:
+      - "application/json"
+    produces:
+      - "application/json"
+    parameters:
+    - name: "target_id"
+      in: "path"
+      description: "DB key id"
+      required: true
+      type: "string"
+      x-exportParamName: "target_id"
+
+    responses:
+      200:
+        description: Listing single target.
+      404:
+        description: Not Found.
+    """
     logger.info("GET: path={}, client={}, target_id={}".format(request.path, request.remote_addr, target_id))
 
     try:
