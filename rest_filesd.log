@@ -1,1 +1,33 @@
 2020-08-23 14:55:20,092 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:01:52,189 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:01:52,195 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:02:04,741 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:02:04,747 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:02:24,084 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-09-02 09:02:24,087 - rest_filesd - DEBUG - Showing all targets.
+2020-09-02 09:04:03,133 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:04:03,142 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:04:23,104 - rest_filesd - INFO - GET: path=/api/v1/targets/, client=104.45.67.167
+2020-09-02 09:04:23,109 - rest_filesd - DEBUG - Showing all targets.
+2020-09-02 09:21:41,718 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:21:41,724 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:22:34,845 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:22:34,849 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:45:36,707 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:45:36,713 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:46:02,271 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:46:02,279 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:46:13,155 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:46:13,161 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:46:48,139 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:46:48,145 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:46:49,113 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:46:49,123 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:47:10,529 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:47:10,534 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 09:47:11,140 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 09:47:11,147 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 13:30:57,049 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 13:30:57,055 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
+2020-09-02 13:31:11,008 - rest_filesd - DEBUG - Created sample data.
+2020-09-02 13:31:11,013 - rest_filesd - INFO - YAML files generated in '/root/rest_filesd/yaml'
